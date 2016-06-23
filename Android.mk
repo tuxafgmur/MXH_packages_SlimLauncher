@@ -12,7 +12,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
 LOCAL_PATH := $(call my-dir)
 
@@ -23,25 +22,28 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE_TAGS := optional
 
-LOCAL_STATIC_JAVA_LIBRARIES := android-support-v13 \
-                               android-support-v7-recyclerview
+LOCAL_STATIC_JAVA_LIBRARIES := \
+    android-support-v13 \
+    android-support-v7-recyclerview
 
-LOCAL_SRC_FILES := $(call all-java-files-under, src) \
+LOCAL_SRC_FILES := \
+    $(call all-java-files-under, src) \
     $(call all-java-files-under, WallpaperPicker/src) \
     $(call all-renderscript-files-under, src)
-LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/WallpaperPicker/res $(LOCAL_PATH)/res
+
+LOCAL_RESOURCE_DIR := \
+    $(LOCAL_PATH)/WallpaperPicker/res \
+    $(LOCAL_PATH)/res
 
 LOCAL_AAPT_FLAGS := --auto-add-overlay
 LOCAL_AAPT_INCLUDE_ALL_RESOURCES := true
 
-LOCAL_SDK_VERSION := 21
-
 LOCAL_PACKAGE_NAME := SlimLauncher
+LOCAL_PRIVILEGED_MODULE := true
 
-LOCAL_OVERRIDES_PACKAGES := Launcher2
+LOCAL_OVERRIDES_PACKAGES := Launcher3
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
+LOCAL_PROGUARD_ENABLED := full
 
 include $(BUILD_PACKAGE)
-
-include $(call all-makefiles-under,$(LOCAL_PATH))
