@@ -43,6 +43,8 @@
   <string name="workspace_locked">El escritorio está bloqueado. Para reorganizarlo, debes desbloquearlo en los ajustes.</string>
   <string name="homescreen_title">Escritorio</string>
   <string name="show_search_bar_title">Mostrar la barra de búsqueda</string>
+  <string name="show_shadow_title">Mostrar sombra</string>
+  <string name="show_shadow_summary">Más notorio con fondos de pantalla claros</string>
   <string name="hide_icon_labels_title">Ocultar etiquetas de iconos</string>
   <string name="hide_icon_labels_drawer_summary">Ocultar etiquetas en el cajón de aplicaciones</string>
   <string name="hide_icon_labels_homescreen_summary">Ocultar etiquetas en el escritorio</string>
@@ -52,6 +54,7 @@
   <string name="drawer_style_paged">Paginado</string>
   <string name="drawer_style_vertical">Vertical</string>
   <string name="drawer_style_vertical_folder">Carpetas verticales</string>
+  <string name="drawer_background_title">Color de fondo</string>
   <string name="dock_title">Barra de aplicaciones</string>
   <string name="dock_icons_title">Iconos en la barra de aplicaciones</string>
   <string name="dock_icons_summary">Determinar cuántos iconos puede albergar la barra de aplicaciones</string>
