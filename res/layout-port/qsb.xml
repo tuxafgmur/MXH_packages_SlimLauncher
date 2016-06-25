@@ -35,7 +35,7 @@
         android:clickable="true"
         android:contentDescription="@string/accessibility_search_button">
        <ImageView
-            android:paddingStart="8dp"
+            android:paddingStart="14dp"
             android:id="@+id/search_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -55,8 +55,8 @@
         android:layout_gravity="center_vertical"
         android:layout_centerVertical="true"
         android:layout_alignParentEnd="true"
-        android:paddingEnd="8dp"
-        android:paddingRight="8dp"
+        android:paddingEnd="14dp"
+        android:paddingRight="2dp"
         android:onClick="onClickVoiceButton"
         android:focusable="true"
         android:clickable="true"
